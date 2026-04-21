@@ -1,0 +1,30 @@
+# Python virtual environment
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model files (large - handle separately)
+# models/*.pkl   ← comment this out if models are small enough
+
+# React build
+frontend/build/
+frontend/node_modules/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+app/.streamlit/
