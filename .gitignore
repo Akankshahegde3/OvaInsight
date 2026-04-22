@@ -27,4 +27,8 @@ frontend/node_modules/
 Thumbs.db
 
 # Streamlit
-app/.streamlit/
+app/.streamlit/venv/ 
+node_modules/ 
+frontend/build/ 
+__pycache__/ 
+*.pyc 
