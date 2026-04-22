@@ -162,3 +162,22 @@ p, span, div { }
 .fl { color: #4A3560 !important; }
 .stitle { color: #1A0A2E; }
 .overline { color: var(--gold); }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .shell {
+    flex-direction: column;
+  }
+  aside {
+    display: none !important;
+  }
+  .page {
+    padding: 16px 14px;
+  }
+  .g2, .g3, .g4 {
+    grid-template-columns: 1fr !important;
+  }
+  .content {
+    width: 100%;
+  }
+}
