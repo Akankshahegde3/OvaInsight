@@ -70,7 +70,7 @@ export default function Assessment({onResult,onAddHistory}){
         amh:form.amh!==''?parseFloat(form.amh):null,
         fasting_sugar:form.fasting_sugar!==''?parseFloat(form.fasting_sugar):null,
       };
-      const res=await fetch('http://127.0.0.1:8000/predict/lifestyle',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const res=await fetch('https://ovainsight-backend.onrender.com/predict/lifestyle',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
       if(!res.ok){const d=await res.json();throw new Error(d.detail||'Server error');}
       const data=await res.json();
       const stamped={...data,bmi:parseFloat(bmi),date:new Date().toISOString()};
