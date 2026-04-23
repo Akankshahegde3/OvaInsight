@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/App.js << 'EOF'
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, NavLink, useNavigate } from 'react-router-dom';
 import './index.css';
